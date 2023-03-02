@@ -7,5 +7,6 @@ variable  "name" {}
 variable "vpc_peering_connection_id" {}
 variable "internet_gw" {}
 variable "nat_gw" {}
+variable "internetgw_id" {}
 
 
