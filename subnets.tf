@@ -1,4 +1,4 @@
-resource "aws_subnet" "main"{
+resource "aws_subnet" "main" {
     count = length(var.cidr_block)
     cidr_block = var.cidr_block[count.index]
     availability_zone = var.availability_zone[count.index]
