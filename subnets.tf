@@ -5,6 +5,6 @@ resource "aws_subnet" "main" {
     vpc_id = var.vpc_id
     tags = merge(
    local.common_tags, 
-   { Name = "${var.env}-${var.name}-subnet-[count.index+1]" }
+   { Name = ${var.env}-${var.name}-subnet-[count.index+1] }
   )
 }
