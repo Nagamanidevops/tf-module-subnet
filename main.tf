@@ -9,6 +9,7 @@ module "subnets"{
      default_vpc_id   = var.default_vpc_id
      name              = var.name
      vpc_peering_connection_id  = var.vpc_peering_connection_id
+     }
      
 
 # resource "aws_subnet" "main" {
